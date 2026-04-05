@@ -1,29 +1,53 @@
-<html>
-  <head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dental Lounge</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-  </head>
-  <body>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
     <header>
-      <h1>Welcome to Dental Lounge!</h1>
+        <div class="hero">
+            <h1>Welcome to Dental Lounge</h1>
+            <p>Your smile, our priority!</p>
+            <a href="#services" class="btn">Explore Our Services</a>
+        </div>
     </header>
-    <main>
-      <section>
+    <section id="services">
         <h2>Our Services</h2>
-        <ul>
-          <li>Teeth Cleaning</li>
-          <li>Root Canals</li>
-          <li>Whitening</li>
-        </ul>
-      </section>
-      <section>
+        <div class="service-item">
+            <i class="fas fa-tooth"></i>
+            <h3>Teeth Whitening</h3>
+            <p>Brighten your smile with our professional whitening services.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-user-md"></i>
+            <h3>Orthodontics</h3>
+            <p>Get the perfect alignment for your teeth with our orthodontic solutions.</p>
+        </div>
+        <div class="service-item">
+            <i class="fas fa-procedures"></i>
+            <h3>Dental Implants</h3>
+            <p>Replace missing teeth with advanced dental implant technology.</p>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <p>We are a team of dedicated professionals committed to providing top-notch dental care.</p>
+    </section>
+    <section id="contact">
         <h2>Contact Us</h2>
-        <p>Email: info@dentallounge.com</p>
-        <p>Phone: (123) 456-7890</p>
-      </section>
-    </main>
+        <form>
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
     <footer>
-      <p>&copy; 2026 Dental Lounge</p>
+        <p>&copy; 2026 Dental Lounge. All rights reserved.</p>
     </footer>
-  </body>
+</body>
 </html>
